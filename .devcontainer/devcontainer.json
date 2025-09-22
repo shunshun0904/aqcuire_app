@@ -1,10 +1,10 @@
 {
-  "name": "Flutter",
+  "name": "Flutter Codespace",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
   "features": {
     "ghcr.io/devcontainers/features/flutter:1": {
       "version": "latest",
-      "androidSdk": "false"
+      "androidSdk": false
     },
     "ghcr.io/devcontainers/features/dart:1": {}
   },
@@ -17,7 +17,6 @@
       ]
     }
   },
-  "forwardPorts": [3000, 8080],
+  "forwardPorts": [8080],
   "remoteUser": "vscode"
 }
-
