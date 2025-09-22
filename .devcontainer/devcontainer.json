@@ -1,22 +1,16 @@
 {
   "name": "Flutter Codespace",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
-  "features": {
-    "ghcr.io/devcontainers/features/flutter:1": {
-      "version": "latest",
-      "androidSdk": false
-    },
-    "ghcr.io/devcontainers/features/dart:1": {}
-  },
+  "image": "ghcr.io/cirruslabs/flutter:3.32.0-0.1.pre",
   "postCreateCommand": "flutter doctor",
   "customizations": {
     "vscode": {
       "extensions": [
-        "Dart-Code.flutter",
-        "Dart-Code.dart-code"
+        "dart-code.flutter",
+        "dart-code.dart-code"
       ]
     }
   },
   "forwardPorts": [8080],
   "remoteUser": "vscode"
 }
+
