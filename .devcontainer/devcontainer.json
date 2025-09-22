@@ -1,0 +1,23 @@
+{
+  "name": "Flutter",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "features": {
+    "ghcr.io/devcontainers/features/flutter:1": {
+      "version": "latest",
+      "androidSdk": "false"
+    },
+    "ghcr.io/devcontainers/features/dart:1": {}
+  },
+  "postCreateCommand": "flutter doctor",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Dart-Code.flutter",
+        "Dart-Code.dart-code"
+      ]
+    }
+  },
+  "forwardPorts": [3000, 8080],
+  "remoteUser": "vscode"
+}
+
